@@ -35,3 +35,13 @@ Notas:
 - `NEXT_PUBLIC_API_URL` cae a `http://localhost:3001` solo en desarrollo/test.
 - En `production`, `NEXT_PUBLIC_API_URL` es obligatorio.
 - En `NODE_ENV=test` (smoke E2E) se permite fallback deterministico de Supabase para evitar crashes por config faltante.
+
+## Persistent chat-session verification
+
+See [`../docs/supabase-chat-sessions.md`](../docs/supabase-chat-sessions.md) for the database, backend, and environment setup. Verify the flow with this checklist:
+
+- [ ] Sign in.
+- [ ] Send a chat message and confirm the conversation is listed.
+- [ ] Sign out.
+- [ ] Sign in again with the same account.
+- [ ] Confirm the previous conversation and its messages reappear.
