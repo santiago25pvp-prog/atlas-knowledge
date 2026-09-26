@@ -32,6 +32,7 @@
 - `authMiddleware` validates the token against Supabase before allowing access to protected routes.
 - `adminMiddleware` restricts `/admin/*` to users with `app_metadata.role === "admin"`.
 - The frontend uses Supabase Auth for login, registration, and session handling.
+- Persistent chat-session setup, environment variables, RLS, and verification are documented in [`docs/supabase-chat-sessions.md`](docs/supabase-chat-sessions.md)
 
 ### Tests
 

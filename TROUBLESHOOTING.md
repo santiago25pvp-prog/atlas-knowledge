@@ -105,6 +105,17 @@ This guide covers common failures in ingestion, embeddings, retrieval, frontend 
 - Confirm database migrations were applied and required SQL functions exist.
 - Review backend logs around startup and first request for initialization failures.
 
+### Symptom: Chat sessions do not persist or are unavailable
+
+- Review [`docs/supabase-chat-sessions.md`](docs/supabase-chat-sessions.md) for the complete setup and verification flow.
+- Confirm `migrations/004_chat_sessions.sql` was applied to the target Supabase project. It was applied directly through the Session Pooler and is not present in Supabase CLI migration history.
+- Verify the backend Session Pooler variables are set: `SUPABASE_DB_HOST`, `SUPABASE_DB_PORT`, `SUPABASE_DB_NAME`, `SUPABASE_DB_USER`, and `SUPABASE_DB_PASSWORD`.
+- Verify the frontend has `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `NEXT_PUBLIC_API_URL`.
+- Check that `chat_sessions` and `chat_messages` exist, RLS is enabled, and policies restrict rows to `auth.uid()`.
+- Confirm requests include a valid `Authorization` token and that chat requests preserve `sessionId`.
+- A protected `/chat/sessions` request without a token should return `401`; REST table checks should return `200` when the endpoint and credentials are correct.
+- Never commit database passwords, API keys, or other secrets.
+
 ## Quick Verification Checklist
 
 - Backend typecheck/tests/audit pass in root project.
