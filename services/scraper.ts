@@ -109,6 +109,7 @@ function sameAddress(left: string, right: string): boolean {
 }
 
 async function resolvePublic(hostname: string, deadline: number): Promise<{ address: string; family: 4 | 6 }> {
+  hostname = hostname.replace(/^\[|\]$/g, '');
   if (net.isIP(hostname)) {
     if (!isPublicAddress(hostname)) throw new Error('Blocked non-public address');
     return { address: hostname, family: net.isIPv4(hostname) ? 4 : 6 };
