@@ -1,6 +1,6 @@
 {
   "name": "mi-proyecto",
-  "version": "1.20.0",
+  "version": "1.20.1",
   "description": "Express backend service for mi-proyecto",
   "main": "dist/server.js",
   "scripts": {

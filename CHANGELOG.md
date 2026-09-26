@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.20.1](https://github.com/santiago25pvp-prog/mi-proyecto/compare/v1.20.0...v1.20.1) (2026-09-26)
+
+
+### Bug Fixes
+
+* harden scraper against ssrf ([0b2ed98](https://github.com/santiago25pvp-prog/mi-proyecto/commit/0b2ed9805e6bc314897865743e876f31ddc44286))
+* harden scraper against SSRF ([27cb7ea](https://github.com/santiago25pvp-prog/mi-proyecto/commit/27cb7eac1c3de930256bc9d3d8a20d37cd0ca4b8))
+* normalize bracketed ipv6 scraper hosts ([7e88340](https://github.com/santiago25pvp-prog/mi-proyecto/commit/7e883400a9f16b3ba56814ac2a358f2e079bf5a8))
+
 ## [1.20.0](https://github.com/santiago25pvp-prog/mi-proyecto/compare/v1.19.0...v1.20.0) (2026-05-18)
 
 
