@@ -17,8 +17,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Atlas RAG Console",
-  description: "Frontend en Next.js para conversar, revisar fuentes y administrar documentos del backend Express.",
+  title: "Atlas Knowledge",
+  description:
+    "Plataforma RAG para conversar con tu base de conocimiento, revisar fuentes y administrar documentos.",
 };
 
 export default function RootLayout({

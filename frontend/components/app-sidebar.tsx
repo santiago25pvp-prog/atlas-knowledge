@@ -44,7 +44,7 @@ export function AppSidebar() {
   return (
     <aside className="surface-panel mx-4 mt-4 flex flex-col rounded-[2rem] p-5 lg:sticky lg:top-4 lg:mx-0 lg:my-4 lg:min-h-[calc(100vh-2rem)]">
       <div>
-        <div className="section-kicker eyebrow-dot">Atlas RAG</div>
+        <div className="section-kicker eyebrow-dot">Atlas Knowledge</div>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight">
           Console
         </h1>
