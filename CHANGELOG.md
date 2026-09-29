@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/santiago25pvp-prog/atlas-knowledge/compare/v1.20.1...v1.21.0) (2026-09-29)
+
+
+### Features
+
+* rename project to Atlas Knowledge ([ca01342](https://github.com/santiago25pvp-prog/atlas-knowledge/commit/ca013423c6b02d35485521170b54f4f92cd661da))
+
 ## [1.20.1](https://github.com/santiago25pvp-prog/mi-proyecto/compare/v1.20.0...v1.20.1) (2026-09-26)
 
 
