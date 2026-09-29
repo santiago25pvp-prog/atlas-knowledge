@@ -1,6 +1,6 @@
-# Frontend
+# Atlas Knowledge Frontend
 
-Nuevo frontend en Next.js para el backend Express del proyecto.
+Next.js frontend for the Atlas Knowledge backend. It provides authenticated chat, persistent conversations, source-aware answers, and an administrative workspace for indexed documents.
 
 ## Scripts
 

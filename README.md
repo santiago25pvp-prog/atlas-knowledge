@@ -1,6 +1,8 @@
-# mi-proyecto
+# Atlas Knowledge
 
-`mi-proyecto` is a RAG (Retrieval-Augmented Generation) system that turns web content into a searchable knowledge base. It solves the problem of having documentation, manuals, or pages scattered across the web and needing traceable answers through an API and an authenticated web interface, with vector storage in Supabase and answer generation with Gemini.
+**Atlas Knowledge** is a RAG (Retrieval-Augmented Generation) platform that turns web content into a searchable, traceable knowledge base. It ingests documentation and web pages, retrieves relevant context through vector and hybrid search, and generates answers with visible sources through an authenticated web interface and API.
+
+The platform combines an Express/TypeScript backend, a Next.js frontend, Supabase with `pgvector`, and Gemini models for embeddings and answer generation.
 
 ## Main Features
 
@@ -33,6 +35,14 @@
 - `adminMiddleware` restricts `/admin/*` to users with `app_metadata.role === "admin"`.
 - The frontend uses Supabase Auth for login, registration, and session handling.
 - Persistent chat-session setup, environment variables, RLS, and verification are documented in [`docs/supabase-chat-sessions.md`](docs/supabase-chat-sessions.md)
+
+### Web Application
+
+- Authenticated chat with persistent server-side conversations.
+- Streaming answers over SSE with a JSON fallback when streaming is unavailable.
+- Visible sources for traceable answers.
+- Admin workspace for document listing, deletion, and collection statistics.
+- Spanish and English backend error localization through `Accept-Language`.
 
 ### Tests
 
@@ -147,6 +157,10 @@ npm run rag:eval -- --dataset=eval/fixtures/rag-eval.sample.json
 - The scraper has timeout, redirect limits, and payload size limits to prevent trivial DoS cases.
 - The frontend chat persists transcript and active selection per user in `sessionStorage`.
 - Frontend authentication refreshes the session when the token is close to expiration.
+
+## Current Status
+
+Atlas Knowledge is an actively developed platform with the core ingestion, retrieval, chat, authentication, administration, evaluation, and observability flows implemented. The project is designed to evolve from a URL-based knowledge base into a broader workspace for trusted, source-backed answers.
 
 ## Installation
 

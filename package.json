@@ -1,7 +1,7 @@
 {
-  "name": "mi-proyecto",
+  "name": "atlas-knowledge",
   "version": "1.20.1",
-  "description": "Express backend service for mi-proyecto",
+  "description": "Express backend service for Atlas Knowledge",
   "main": "dist/server.js",
   "scripts": {
     "check:tsconfig": "node scripts/check-tsconfig-guard.cjs",

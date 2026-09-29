@@ -2,7 +2,7 @@
 
 ## Scope
 
-This runbook defines the minimum operational policy to rotate critical secrets used by `mi-proyecto`:
+This runbook defines the minimum operational policy to rotate critical secrets used by Atlas Knowledge:
 
 - `GEMINI_API_KEY`
 - Supabase keys (`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`)

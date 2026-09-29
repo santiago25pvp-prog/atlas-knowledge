@@ -21,7 +21,7 @@ const logger = winston.createLogger({
     winston.format.splat(),
     winston.format.json()
   ),
-  defaultMeta: { service: 'mi-proyecto' },
+  defaultMeta: { service: 'atlas-knowledge' },
   transports: [
     new winston.transports.File({ 
       filename: path.join(logDir, 'error.log'), 

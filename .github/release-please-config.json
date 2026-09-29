@@ -2,7 +2,7 @@
   "packages": {
     ".": {
       "release-type": "node",
-      "package-name": "mi-proyecto"
+      "package-name": "atlas-knowledge"
     }
   }
 }

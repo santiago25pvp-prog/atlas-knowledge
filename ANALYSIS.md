@@ -1,4 +1,4 @@
-﻿# ANÁLISIS PROFUNDO: mi-proyecto (Sistema RAG)
+# ANÁLISIS PROFUNDO: Atlas Knowledge (Sistema RAG)
 
 ## Executive Summary
 
